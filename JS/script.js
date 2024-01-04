@@ -49,6 +49,10 @@ function fetchMeteo(location) {
                     imageElement.src = 'img/mist.png';
                     break;
 
+                case 'Mist':
+                    imageElement.src = 'img/mist.png';
+                    break;
+
                 default:
                     imageElement.src = '';
             }

@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Ubuntu', sans-serif;
-    background-color: #f0f0f0;
+    background-color: #2d2d49;
 }
 
 .container {
@@ -14,7 +14,7 @@ body {
     margin: 0 auto;
     text-align: center;
     padding: 2em;
-    background-color: rgba(255, 255, 255, 0.5);
+    background-color: rgba(255, 255, 255, 0.9);
     /* Set the background color to be transparent */
     border-radius: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
@@ -26,25 +26,50 @@ h1 {
     font-size: 2em;
 }
 
-input[type="text"] {
+.search-box {
+    display: flex;
+    flex-direction: row;
+    gap: 1em;
+    margin-top: 1em;
+    align-items: center;
+}
+
+
+input {
     width: 100%;
     padding: 1em;
-    margin: 1em auto;
-    border: 1px solid #ccc;
-    border-radius: 0.6em;
+    border-radius: 0.5em;
+    border: 1px solid lightgray;
 }
 
 button {
-    background-color: #007BFF;
+    background-color: #1874d6;
     color: #fff;
     border: none;
-    padding: 10px 20px;
-    border-radius: 5px;
+    padding: 1em;
+    border-radius: 0.5em;
     cursor: pointer;
 }
 
 .weather-info {
     margin-top: 20px;
+}
+
+#not-found-img {
+    height: 20em;
+    margin-top: 1em;
+    display: none;
+}
+
+#not-found-img.active {
+    display: block;
+    height: 20em;
+    margin-top: 1em;
+}
+
+#image {
+    height: 20em;
+    margin-top: 1em;
 }
 
 /* Add more styles as needed */

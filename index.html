@@ -7,22 +7,35 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
-    <link rel="shortcut icon" href="img/soleil.pngs" type="image/x-icon" />
+    <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon" />
     <link rel=stylesheet href=css/style.css>
-    <title>Météo</title>
+    <title>Weather</title>
 </head>
 
 <body>
     <div class="container">
-        <h1>Météo</h1>
-        <input type="text" id="locationInput" placeholder="Entez une ville">
-        <button id="searchButton">Rechercher</button>
+        <h1>Weather</h1>
+        <div class="search-box">
+            <i class="fa-solid fa-location-dot"></i>
+            <input type="text" id="locationInput" placeholder="Enter your location">
+            <button id="searchButton" class="fa-solid fa-magnifying-glass"></button>
+        </div>
         <div class="weather-info">
             <h2 id="location"></h2>
             <p id="temperature"></p>
             <p id="description"></p>
+            <p id="humidity"></p>
+            <p id="wind"></p>
+        </div>
+        <div>
+            <img id="image" src="" alt="">
+        </div>
+        <div class="not-found">
+            <img id="not-found-img" src="img/not-found-weather.png" alt="">
         </div>
     </div>
+
+    <script src="https://kit.fontawesome.com/7c8801c017.js" crossorigin="anonymous"></script>
     <script src=JS/script.js></script>
 </body>
 

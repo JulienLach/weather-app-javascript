@@ -1,4 +1,4 @@
-// déclarer le clé API et l'URL des données
+// Déclarer le clé API et l'URL des données
 const apiKey = "49d8120fcfd33741453d50aa5c39c635"
 const apiUrl = "https://api.openweathermap.org/data/2.5/weather"
 
@@ -27,7 +27,7 @@ function fetchMeteo(location) {
             humidityElement.textContent = "Humidity " + data.main.humidity + "%";
             windElement.textContent = `Wind speed ${parseInt(data.wind.speed)} km/h`;
 
-            // affichage de l'image en fonction de la data weather
+            // Affichage de l'image en fonction de la data weather
             switch (data.weather[0].main) {
                 case 'Clear':
                     imageElement.src = 'img/clear.jpg';

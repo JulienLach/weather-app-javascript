@@ -11,15 +11,12 @@ body {
 
 .container {
     max-width: 400px;
-    margin: 0 auto;
+    margin: 3em auto;
     text-align: center;
     padding: 2em;
     background-color: rgba(255, 255, 255, 0.9);
-    /* Set the background color to be transparent */
     border-radius: 1em;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
-    /* Adjust the alpha value here for the box shadow transparency */
-    margin-top: 10em;
 }
 
 h1 {
@@ -33,7 +30,6 @@ h1 {
     margin-top: 1em;
     align-items: center;
 }
-
 
 input {
     width: 100%;
@@ -69,7 +65,5 @@ button {
 
 #image {
     height: 20em;
-    margin-top: 1em;
+    margin: 1em auto;
 }
-
-/* Add more styles as needed */
